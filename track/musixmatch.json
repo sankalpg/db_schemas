@@ -1,0 +1,40 @@
+{
+    "track_id": 19056715,
+    "track_mbid": "e69afe5a-a18f-4ed2-a644-ad733364151f",
+    "track_isrc": "",
+    "track_spotify_id": "0Om7fwW0hsztC0SwZXiXRd",
+    "track_soundcloud_id": 0,
+    "track_xboxmusic_id": "music.3958FD01-0100-11DB-89CA-0019B92A3933",
+    "track_name": "5 AM",
+    "track_name_translation_list": [],
+    "track_rating": 18,
+    "track_length": 284,
+    "commontrack_id": 11698484,
+    "instrumental": 0,
+    "explicit": 0,
+    "has_lyrics": 1,
+    "has_subtitles": 1,
+    "num_favourite": 0,
+    "lyrics_id": 10217202,
+    "subtitle_id": 4421890,
+    "album_id": 14288027,
+    "album_name": "SomethingALaMode",
+    "artist_id": 14328040,
+    "artist_mbid": "",
+    "artist_name": "SomethingALaMode & K Flay",
+    "album_coverart_100x100": "http://s.mxmcdn.net/images-storage/albums8/9/2/2/2/9/3/11392229.jpg",
+    "album_coverart_350x350": "http://s.mxmcdn.net/images-storage/albums8/9/2/2/2/9/3/11392229_350_350.jpg",
+    "album_coverart_500x500": "http://s.mxmcdn.net/images-storage/albums8/9/2/2/2/9/3/11392229_500_500.jpg",
+    "album_coverart_800x800": "http://s.mxmcdn.net/images-storage/albums8/9/2/2/2/9/3/11392229_800_800.jpg",
+    "track_share_url": "https://www.musixmatch.com/lyrics/SomethingALaMode-K-Flay/5-AM",
+    "track_edit_url": "https://www.musixmatch.com/lyrics/SomethingALaMode-K-Flay/5-AM?utm_source=application&utm_campaign=api&utm_medium=musixmatch-spotify",
+    "commontrack_vanity_id": "SomethingALaMode-K-Flay/5-AM",
+    "restricted": 0,
+    "updated_time": "2015-01-12T14:47:37Z",
+    "primary_genres": {
+        "music_genre_list": []
+    },
+    "secondary_genres": {
+        "music_genre_list": []
+    }
+}

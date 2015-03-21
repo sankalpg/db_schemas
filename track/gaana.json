@@ -1,0 +1,46 @@
+{
+    "track_id": "677305",
+    "seokey": "matru-ki-bijlee-ka-mandola-1",
+    "albumseokey": "matru-ki-bijlee-ka-mandola-hindi",
+    "track_title": "Matru Ki Bijlee Ka Mandola ",
+    "album_id": "69014",
+    "album_title": "Matru Ki Bijlee Ka Mandola",
+    "artwork": "http://static.gaana.com/images/albums/14/69014/crop_80x80_69014.jpg",
+    "artwork_large": "http://static.gaana.com/images/albums/14/69014/crop_480x480_69014.jpg",
+    "artist": [{
+            "artist_id": "136606",
+            "name": "Vishal Bhardwaj feat. Sukhwinder Singh"
+        },
+
+        {
+            "artist_id": "6428",
+            "name": "Ranjit Barot"
+        }
+    ],
+    "gener": [{
+        "genre_id": "585",
+        "name": "Soundtrack (Bollywood)"
+    }],
+    "popularity": "408782~408782",
+    "rating": "0",
+    "stream_type": "rtmp",
+    "duration": "210",
+    "isrc": "INS171201015",
+    "display_global": "0",
+    "track_format": {
+        "mp3": {
+            "normal": "1",
+            "medium": "1",
+            "high": "1"
+        },
+        "mp4_aac": {
+            "normal": "1",
+            "medium": 0,
+            "high": 0
+        }
+    },
+    "rtmp": "0",
+    "http": "0",
+    "https": "0",
+    "rtsp": "1"
+}

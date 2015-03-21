@@ -1,0 +1,37 @@
+{
+    "artist_id": 12,
+    "artist_mbid": "f150ed27-bee7-49d8-a226-31fef88c29b3",
+    "artist_name": "William S. Burroughs",
+    "artist_name_translation_list": [],
+    "artist_comment": "",
+    "artist_country": "US",
+    "artist_alias_list": [{
+        "artist_alias": "William Burroughs"
+    }, {
+        "artist_alias": "William S Burroughs"
+    }],
+    "artist_rating": 13,
+    "primary_genres": {
+        "music_genre_list": []
+    },
+    "secondary_genres": {
+        "music_genre_list": [{
+            "music_genre": {
+                "music_genre_id": 50000061,
+                "music_genre_parent_id": 34,
+                "music_genre_name": "Spoken Word",
+                "music_genre_name_extended": "Spoken Word",
+                "music_genre_vanity": "Spoken-Word"
+            }
+        }]
+    },
+    "artist_twitter_url": "",
+    "artist_vanity_id": "William-S-Burroughs",
+    "artist_edit_url": "https://www.musixmatch.com/artist/William-S-Burroughs?utm_source=application&utm_campaign=api&utm_medium=musixmatch-spotify",
+    "artist_share_url": "https://www.musixmatch.com/artist/William-S-Burroughs",
+    "artist_credits": {
+        "artist_list": []
+    },
+    "restricted": 0,
+    "updated_time": "2013-11-05T11:24:49Z"
+}

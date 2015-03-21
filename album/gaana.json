@@ -1,0 +1,38 @@
+{
+    "album_id": "69277",
+    "seokey": "teri-jhuki-nazar",
+    "title": "Teri Jhuki Nazar-Murder 3",
+    "language": "Hindi",
+    "rating": "0",
+    "duration": "262",
+    "release_date": null,
+    "trackcount": "1",
+    "recordlevel": "Sony Music",
+    "artwork": "http://static.gaana.com/images/albums/77/69277/crop_80x80_69277.jpg",
+    "primaryartist": [{
+        "artist_id": "",
+        "name": ""
+    }],
+    "artist": [{
+            "artist_id": "11764",
+            "name": "Shafaqat Amanat Ali"
+        },
+
+        {
+            "artist_id": "11468",
+            "name": "Pritam"
+        }
+    ],
+    "gener": [{
+        "gener_id": null,
+        "name": ""
+    }],
+    "trackids": "680292",
+    "custom_artworks": {
+        "40 x40": "http://static.gaana.com/images/albums/77/69277/crop_40x40_69277.jpg",
+            "80 x80": "http://static.gaana.com/images/albums/77/69277/crop_80x80_69277.jpg",
+            "110 x110": "http://static.gaana.com/images/albums/77/69277/crop_110x110_69277.jpg",
+            "175 x175": "http://static.gaana.com/images/albums/77/69277/crop_175x175_69277.jpg",
+            "480 x480": "http://static.gaana.com/images/albums/77/69277/crop_480x480_69277.jpg"
+    }
+}
