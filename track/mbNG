@@ -1,0 +1,2660 @@
+{
+  "grammar": {
+    "-xmlns": "http://relaxng.org/ns/structure/1.0",
+    "-datatypeLibrary": "http://www.w3.org/2001/XMLSchema-datatypes",
+    "-ns": "http://musicbrainz.org/ns/mmd-2.0#",
+    "parsererror": {
+      "-style": "display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black",
+      "h3": [
+        "This page contains the following errors:",
+        "Below is a rendering of the page up to the first error."
+      ],
+      "div": {
+        "-style": "font-family:monospace;font-size:12px",
+        "#text": "error on line 2525 at column 1: Extra content at the end of the document
+"
+      }
+    },
+    "start": {
+      "ref": { "-name": "def_metadata-element" }
+    },
+    "define": [
+      {
+        "-name": "def_metadata-element",
+        "element": {
+          "-name": "metadata",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "generator",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "created",
+                "data": { "-type": "dateTime" }
+              }
+            },
+            {
+              "ref": { "-name": "def_artist-element" }
+            },
+            {
+              "ref": { "-name": "def_release-element" }
+            },
+            {
+              "ref": { "-name": "def_release-group-element" }
+            },
+            {
+              "ref": { "-name": "def_recording-element" }
+            },
+            {
+              "ref": { "-name": "def_label-element" }
+            },
+            {
+              "ref": { "-name": "def_work-element" }
+            },
+            {
+              "ref": { "-name": "def_area-element" }
+            },
+            {
+              "ref": { "-name": "def_place-element" }
+            },
+            {
+              "ref": { "-name": "def_instrument-element" }
+            },
+            {
+              "ref": { "-name": "def_series-element" }
+            },
+            {
+              "ref": { "-name": "def_event-element" }
+            },
+            {
+              "ref": { "-name": "def_url-element" }
+            },
+            {
+              "ref": { "-name": "def_puid-element" }
+            },
+            {
+              "ref": { "-name": "def_isrc-element" }
+            },
+            {
+              "ref": { "-name": "def_disc-element" }
+            },
+            {
+              "ref": { "-name": "def_rating" }
+            },
+            {
+              "ref": { "-name": "def_user-rating" }
+            },
+            {
+              "ref": { "-name": "def_collection" }
+            },
+            {
+              "ref": { "-name": "def_editor-element" }
+            },
+            {
+              "ref": { "-name": "def_artist-list" }
+            },
+            {
+              "ref": { "-name": "def_release-list" }
+            },
+            {
+              "ref": { "-name": "def_release-group-list" }
+            },
+            {
+              "ref": { "-name": "def_recording-list" }
+            },
+            {
+              "ref": { "-name": "def_label-list" }
+            },
+            {
+              "ref": { "-name": "def_work-list" }
+            },
+            {
+              "ref": { "-name": "def_area-list" }
+            },
+            {
+              "ref": { "-name": "def_place-list" }
+            },
+            {
+              "ref": { "-name": "def_instrument-list" }
+            },
+            {
+              "ref": { "-name": "def_series-list" }
+            },
+            {
+              "ref": { "-name": "def_event-list" }
+            },
+            {
+              "ref": { "-name": "def_url-list" }
+            },
+            {
+              "ref": { "-name": "def_isrc-list" }
+            },
+            {
+              "ref": { "-name": "def_annotation-list" }
+            },
+            {
+              "ref": { "-name": "def_cdstub-list" }
+            },
+            {
+              "ref": { "-name": "def_freedb-disc-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            },
+            {
+              "ref": { "-name": "def_collection-list" }
+            },
+            {
+              "ref": { "-name": "def_editor-list" }
+            },
+            {
+              "ref": { "-name": "def_entity-list" }
+            }
+          ],
+          "ref": { "-name": "def_metadata-element_extension" }
+        }
+      },
+      {
+        "-name": "def_artist-element",
+        "element": {
+          "-name": "artist",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "name" }
+            },
+            {
+              "element": { "-name": "sort-name" }
+            },
+            {
+              "element": { "-name": "gender" }
+            },
+            {
+              "element": {
+                "-name": "country",
+                "ref": { "-name": "def_iso-3166-1-code" }
+              }
+            },
+            {
+              "ref": { "-name": "def_area-element" }
+            },
+            {
+              "element": {
+                "-name": "begin-area",
+                "ref": { "-name": "def_area-element_inner" }
+              }
+            },
+            {
+              "element": {
+                "-name": "end-area",
+                "ref": { "-name": "def_area-element_inner" }
+              }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "element": {
+                "-name": "ipi",
+                "ref": { "-name": "def_ipi" }
+              }
+            },
+            {
+              "ref": { "-name": "def_ipi-list" }
+            },
+            {
+              "element": {
+                "-name": "life-span",
+                "optional": [
+                  {
+                    "element": {
+                      "-name": "begin",
+                      "ref": { "-name": "def_incomplete-date" }
+                    }
+                  },
+                  {
+                    "element": {
+                      "-name": "end",
+                      "ref": { "-name": "def_incomplete-date" }
+                    }
+                  },
+                  {
+                    "ref": { "-name": "def_ended" }
+                  }
+                ]
+              }
+            },
+            {
+              "ref": { "-name": "def_alias-list" }
+            },
+            {
+              "ref": { "-name": "def_recording-list" }
+            },
+            {
+              "ref": { "-name": "def_release-list" }
+            },
+            {
+              "ref": { "-name": "def_release-group-list" }
+            },
+            {
+              "ref": { "-name": "def_label-list" }
+            },
+            {
+              "ref": { "-name": "def_work-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            },
+            {
+              "ref": { "-name": "def_rating" }
+            },
+            {
+              "ref": { "-name": "def_user-rating" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_artist-attribute_extension" },
+            { "-name": "def_artist-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_release-element",
+        "element": {
+          "-name": "release",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "title" }
+            },
+            {
+              "element": { "-name": "status" }
+            },
+            {
+              "element": {
+                "-name": "quality",
+                "ref": { "-name": "def_quality" }
+              }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "element": { "-name": "packaging" }
+            },
+            {
+              "element": {
+                "-name": "text-representation",
+                "optional": [
+                  {
+                    "element": {
+                      "-name": "language",
+                      "ref": { "-name": "def_iso-639" }
+                    }
+                  },
+                  {
+                    "element": {
+                      "-name": "script",
+                      "ref": { "-name": "def_iso-15924" }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "ref": { "-name": "def_artist-credit" }
+            },
+            {
+              "ref": { "-name": "def_release-group-element" }
+            },
+            {
+              "element": {
+                "-name": "date",
+                "ref": { "-name": "def_incomplete-date" }
+              }
+            },
+            {
+              "element": {
+                "-name": "country",
+                "ref": { "-name": "def_iso-3166-1-code" }
+              }
+            },
+            {
+              "ref": { "-name": "def_release-event-list" }
+            },
+            {
+              "element": { "-name": "barcode" }
+            },
+            {
+              "element": {
+                "-name": "asin",
+                "data": {
+                  "-type": "string",
+                  "param": {
+                    "-name": "pattern",
+                    "#text": "[A-Z0-9]{10}"
+                  }
+                }
+              }
+            },
+            {
+              "ref": { "-name": "def_cover-art-archive" }
+            },
+            {
+              "ref": { "-name": "def_label-info-list" }
+            },
+            {
+              "ref": { "-name": "def_medium-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            },
+            {
+              "ref": { "-name": "def_collection-list" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_release-attribute_extension" },
+            { "-name": "def_release-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_release-group-element",
+        "element": {
+          "-name": "release-group",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "title" }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "element": {
+                "-name": "first-release-date",
+                "ref": { "-name": "def_incomplete-date" }
+              }
+            },
+            {
+              "element": { "-name": "primary-type" }
+            },
+            {
+              "element": {
+                "-name": "secondary-type-list",
+                "optional": {
+                  "zeroOrMore": {
+                    "element": { "-name": "secondary-type" }
+                  }
+                }
+              }
+            },
+            {
+              "ref": { "-name": "def_artist-credit" }
+            },
+            {
+              "ref": { "-name": "def_release-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            },
+            {
+              "ref": { "-name": "def_rating" }
+            },
+            {
+              "ref": { "-name": "def_user-rating" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_release-group-attribute_extension" },
+            { "-name": "def_release-group-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_recording-element",
+        "element": {
+          "-name": "recording",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "title" }
+            },
+            {
+              "element": {
+                "-name": "length",
+                "data": { "-type": "nonNegativeInteger" }
+              }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "ref": { "-name": "def_video" }
+            },
+            {
+              "ref": { "-name": "def_artist-credit" }
+            },
+            {
+              "ref": { "-name": "def_release-list" }
+            },
+            {
+              "ref": { "-name": "def_puid-list" }
+            },
+            {
+              "ref": { "-name": "def_isrc-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            },
+            {
+              "ref": { "-name": "def_rating" }
+            },
+            {
+              "ref": { "-name": "def_user-rating" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_recording-attribute_extension" },
+            { "-name": "def_recording-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_label-element",
+        "element": {
+          "-name": "label",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "name" }
+            },
+            {
+              "element": { "-name": "sort-name" }
+            },
+            {
+              "element": {
+                "-name": "label-code",
+                "data": { "-type": "nonNegativeInteger" }
+              }
+            },
+            {
+              "element": {
+                "-name": "ipi",
+                "ref": { "-name": "def_ipi" }
+              }
+            },
+            {
+              "ref": { "-name": "def_ipi-list" }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "element": {
+                "-name": "country",
+                "ref": { "-name": "def_iso-3166-1-code" }
+              }
+            },
+            {
+              "ref": { "-name": "def_area-element" }
+            },
+            {
+              "element": {
+                "-name": "life-span",
+                "optional": [
+                  {
+                    "element": {
+                      "-name": "begin",
+                      "ref": { "-name": "def_incomplete-date" }
+                    }
+                  },
+                  {
+                    "element": {
+                      "-name": "end",
+                      "ref": { "-name": "def_incomplete-date" }
+                    }
+                  },
+                  {
+                    "ref": { "-name": "def_ended" }
+                  }
+                ]
+              }
+            },
+            {
+              "ref": { "-name": "def_alias-list" }
+            },
+            {
+              "ref": { "-name": "def_release-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            },
+            {
+              "ref": { "-name": "def_rating" }
+            },
+            {
+              "ref": { "-name": "def_user-rating" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_label-attribute_extension" },
+            { "-name": "def_label-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_work-element",
+        "element": {
+          "-name": "work",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "title" }
+            },
+            {
+              "element": {
+                "-name": "language",
+                "ref": { "-name": "def_iso-639" }
+              }
+            },
+            {
+              "ref": { "-name": "def_artist-credit" }
+            },
+            {
+              "ref": { "-name": "def_iswc-element" }
+            },
+            {
+              "ref": { "-name": "def_iswc-list" }
+            },
+            {
+              "ref": { "-name": "def_work-attribute-list" }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "ref": { "-name": "def_alias-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            },
+            {
+              "ref": { "-name": "def_rating" }
+            },
+            {
+              "ref": { "-name": "def_user-rating" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_work-attribute_extension" },
+            { "-name": "def_work-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_area-element",
+        "element": {
+          "-name": "area",
+          "ref": { "-name": "def_area-element_inner" }
+        }
+      },
+      {
+        "-name": "def_area-element_inner",
+        "optional": [
+          {
+            "attribute": {
+              "-name": "id",
+              "data": { "-type": "anyURI" }
+            }
+          },
+          {
+            "attribute": {
+              "-name": "type",
+              "data": { "-type": "anyURI" }
+            }
+          },
+          {
+            "element": { "-name": "name" }
+          },
+          {
+            "element": { "-name": "sort-name" }
+          },
+          {
+            "element": { "-name": "disambiguation" }
+          },
+          {
+            "ref": { "-name": "def_iso-3166-1-code-list" }
+          },
+          {
+            "ref": { "-name": "def_iso-3166-2-code-list" }
+          },
+          {
+            "ref": { "-name": "def_iso-3166-3-code-list" }
+          },
+          {
+            "ref": { "-name": "def_annotation" }
+          },
+          {
+            "element": {
+              "-name": "life-span",
+              "optional": [
+                {
+                  "element": {
+                    "-name": "begin",
+                    "ref": { "-name": "def_incomplete-date" }
+                  }
+                },
+                {
+                  "element": {
+                    "-name": "end",
+                    "ref": { "-name": "def_incomplete-date" }
+                  }
+                },
+                {
+                  "ref": { "-name": "def_ended" }
+                }
+              ]
+            }
+          },
+          {
+            "ref": { "-name": "def_alias-list" }
+          },
+          {
+            "ref": { "-name": "def_tag-list" }
+          },
+          {
+            "ref": { "-name": "def_user-tag-list" }
+          }
+        ],
+        "ref": [
+          { "-name": "def_area-attribute_extension" },
+          { "-name": "def_area-element_extension" }
+        ],
+        "zeroOrMore": {
+          "ref": { "-name": "def_relation-list" }
+        }
+      },
+      {
+        "-name": "def_place-element",
+        "element": {
+          "-name": "place",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "name" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "element": { "-name": "address" }
+            },
+            {
+              "element": {
+                "-name": "coordinates",
+                "optional": [
+                  {
+                    "element": { "-name": "latitude" }
+                  },
+                  {
+                    "element": { "-name": "longitude" }
+                  }
+                ]
+              }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "ref": { "-name": "def_area-element" }
+            },
+            {
+              "element": {
+                "-name": "life-span",
+                "optional": [
+                  {
+                    "element": {
+                      "-name": "begin",
+                      "ref": { "-name": "def_incomplete-date" }
+                    }
+                  },
+                  {
+                    "element": {
+                      "-name": "end",
+                      "ref": { "-name": "def_incomplete-date" }
+                    }
+                  },
+                  {
+                    "ref": { "-name": "def_ended" }
+                  }
+                ]
+              }
+            },
+            {
+              "ref": { "-name": "def_alias-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_place-attribute_extension" },
+            { "-name": "def_place-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_instrument-element",
+        "element": {
+          "-name": "instrument",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "name" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "element": { "-name": "description" }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "ref": { "-name": "def_alias-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_instrument-attribute_extension" },
+            { "-name": "def_instrument-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_series-element",
+        "element": {
+          "-name": "series",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "name" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "element": { "-name": "ordering-attribute" }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "ref": { "-name": "def_alias-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_series-attribute_extension" },
+            { "-name": "def_series-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_event-element",
+        "element": {
+          "-name": "event",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "name" }
+            },
+            {
+              "element": { "-name": "disambiguation" }
+            },
+            {
+              "ref": { "-name": "def_cancelled" }
+            },
+            {
+              "element": {
+                "-name": "life-span",
+                "optional": [
+                  {
+                    "element": {
+                      "-name": "begin",
+                      "ref": { "-name": "def_incomplete-date" }
+                    }
+                  },
+                  {
+                    "element": {
+                      "-name": "end",
+                      "ref": { "-name": "def_incomplete-date" }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "element": {
+                "-name": "time",
+                "ref": { "-name": "def_time" }
+              }
+            },
+            {
+              "element": { "-name": "setlist" }
+            },
+            {
+              "ref": { "-name": "def_annotation" }
+            },
+            {
+              "ref": { "-name": "def_alias-list" }
+            },
+            {
+              "ref": { "-name": "def_tag-list" }
+            },
+            {
+              "ref": { "-name": "def_user-tag-list" }
+            },
+            {
+              "ref": { "-name": "def_rating" }
+            },
+            {
+              "ref": { "-name": "def_user-rating" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_event-attribute_extension" },
+            { "-name": "def_event-element_extension" }
+          ],
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_url-element",
+        "element": {
+          "-name": "url",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "resource" }
+            }
+          ],
+          "ref": { "-name": "def_url-attribute_extension" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-list" }
+          }
+        }
+      },
+      {
+        "-name": "def_disc-element",
+        "element": {
+          "-name": "disc",
+          "attribute": {
+            "-name": "id",
+            "data": {
+              "-type": "string",
+              "param": {
+                "-name": "pattern",
+                "#text": "[a-zA-Z0-9._]{27}-"
+              }
+            }
+          },
+          "ref": [
+            { "-name": "def_disc-attribute_extension" },
+            { "-name": "def_disc-element_extension" }
+          ],
+          "optional": [
+            {
+              "element": {
+                "-name": "sectors",
+                "data": { "-type": "nonNegativeInteger" }
+              }
+            },
+            {
+              "ref": { "-name": "def_offset-list" }
+            },
+            {
+              "ref": { "-name": "def_release-list" }
+            }
+          ]
+        }
+      },
+      {
+        "-name": "def_puid-element",
+        "element": {
+          "-name": "puid",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "ref": { "-name": "def_uuid" }
+              }
+            },
+            {
+              "ref": { "-name": "def_recording-list" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_puid-attribute_extension" },
+            { "-name": "def_puid-element_extension" }
+          ]
+        }
+      },
+      {
+        "-name": "def_isrc-element",
+        "element": {
+          "-name": "isrc",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "ref": { "-name": "def_isrc" }
+              }
+            },
+            {
+              "ref": { "-name": "def_recording-list" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_isrc-attribute_extension" },
+            { "-name": "def_isrc-element_extension" }
+          ]
+        }
+      },
+      {
+        "-name": "def_artist-credit",
+        "element": {
+          "-name": "artist-credit",
+          "oneOrMore": {
+            "element": {
+              "-name": "name-credit",
+              "optional": [
+                {
+                  "attribute": { "-name": "joinphrase" }
+                },
+                {
+                  "element": { "-name": "name" }
+                }
+              ],
+              "ref": { "-name": "def_artist-element" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_relation-element",
+        "element": {
+          "-name": "relation",
+          "attribute": [
+            {
+              "-name": "type",
+              "data": { "-type": "anyURI" }
+            },
+            {
+              "-name": "type-id",
+              "data": { "-type": "anyURI" }
+            }
+          ],
+          "element": {
+            "-name": "target",
+            "optional": {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            "data": { "-type": "anyURI" }
+          },
+          "optional": [
+            {
+              "element": {
+                "-name": "ordering-key",
+                "data": { "-type": "nonNegativeInteger" }
+              }
+            },
+            {
+              "element": {
+                "-name": "direction",
+                "ref": { "-name": "def_direction" }
+              }
+            },
+            {
+              "ref": { "-name": "def_attribute-list" }
+            },
+            {
+              "element": {
+                "-name": "begin",
+                "ref": { "-name": "def_incomplete-date" }
+              }
+            },
+            {
+              "element": {
+                "-name": "end",
+                "ref": { "-name": "def_incomplete-date" }
+              }
+            },
+            {
+              "ref": { "-name": "def_ended" }
+            },
+            {
+              "choice": {
+                "ref": [
+                  { "-name": "def_artist-element" },
+                  { "-name": "def_release-element" },
+                  { "-name": "def_release-group-element" },
+                  { "-name": "def_recording-element" },
+                  { "-name": "def_label-element" },
+                  { "-name": "def_work-element" },
+                  { "-name": "def_area-element" },
+                  { "-name": "def_place-element" },
+                  { "-name": "def_instrument-element" },
+                  { "-name": "def_series-element" },
+                  { "-name": "def_event-element" },
+                  { "-name": "def_relation-element_extension" }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "-name": "def_alias",
+        "element": {
+          "-name": "alias",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "locale",
+                "ref": { "-name": "def_locale" }
+              }
+            },
+            {
+              "attribute": { "-name": "sort-name" }
+            },
+            {
+              "attribute": { "-name": "type" }
+            },
+            {
+              "attribute": { "-name": "primary" }
+            },
+            {
+              "attribute": {
+                "-name": "begin-date",
+                "ref": { "-name": "def_incomplete-date" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "end-date",
+                "ref": { "-name": "def_incomplete-date" }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "-name": "def_iswc-element",
+        "element": {
+          "-name": "iswc",
+          "optional": {
+            "ref": { "-name": "def_iswc" }
+          }
+        }
+      },
+      {
+        "-name": "def_tag",
+        "element": {
+          "-name": "tag",
+          "optional": {
+            "attribute": {
+              "-name": "count",
+              "data": { "-type": "nonNegativeInteger" }
+            }
+          },
+          "ref": { "-name": "def_tag-attribute_extension" },
+          "element": { "-name": "name" }
+        }
+      },
+      {
+        "-name": "def_user-tag",
+        "element": {
+          "-name": "user-tag",
+          "ref": { "-name": "def_tag-attribute_extension" },
+          "element": { "-name": "name" }
+        }
+      },
+      {
+        "-name": "def_rating",
+        "element": {
+          "-name": "rating",
+          "optional": {
+            "attribute": {
+              "-name": "votes-count",
+              "data": { "-type": "nonNegativeInteger" }
+            }
+          },
+          "data": { "-type": "float" }
+        }
+      },
+      {
+        "-name": "def_user-rating",
+        "element": {
+          "-name": "user-rating",
+          "data": { "-type": "nonNegativeInteger" }
+        }
+      },
+      {
+        "-name": "def_label-info",
+        "element": {
+          "-name": "label-info",
+          "optional": [
+            {
+              "element": { "-name": "catalog-number" }
+            },
+            {
+              "ref": { "-name": "def_label-element" }
+            }
+          ]
+        }
+      },
+      {
+        "-name": "def_medium",
+        "element": {
+          "-name": "medium",
+          "optional": [
+            {
+              "element": { "-name": "title" }
+            },
+            {
+              "element": {
+                "-name": "position",
+                "data": { "-type": "nonNegativeInteger" }
+              }
+            },
+            {
+              "element": { "-name": "format" }
+            },
+            {
+              "ref": { "-name": "def_disc-list" }
+            },
+            {
+              "ref": { "-name": "def_pregap-track" }
+            },
+            {
+              "ref": { "-name": "def_data-track-list" }
+            }
+          ],
+          "ref": { "-name": "def_track-list" }
+        }
+      },
+      {
+        "-name": "def_track-data",
+        "optional": [
+          {
+            "attribute": {
+              "-name": "id",
+              "data": { "-type": "anyURI" }
+            }
+          },
+          {
+            "element": {
+              "-name": "position",
+              "data": { "-type": "nonNegativeInteger" }
+            }
+          },
+          {
+            "element": { "-name": "number" }
+          },
+          {
+            "element": { "-name": "title" }
+          },
+          {
+            "element": {
+              "-name": "length",
+              "data": { "-type": "nonNegativeInteger" }
+            }
+          },
+          {
+            "ref": { "-name": "def_artist-credit" }
+          },
+          {
+            "ref": { "-name": "def_recording-element" }
+          }
+        ]
+      },
+      {
+        "-name": "def_pregap-track",
+        "element": {
+          "-name": "pregap",
+          "ref": { "-name": "def_track-data" }
+        }
+      },
+      {
+        "-name": "def_track",
+        "element": {
+          "-name": "track",
+          "ref": { "-name": "def_track-data" }
+        }
+      },
+      {
+        "-name": "def_annotation",
+        "element": {
+          "-name": "annotation",
+          "optional": [
+            {
+              "attribute": { "-name": "type" }
+            },
+            {
+              "element": {
+                "-name": "entity",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "name" }
+            }
+          ],
+          "ref": [
+            { "-name": "def_annotation-attribute_extension" },
+            { "-name": "def_annotation-element_extension" }
+          ],
+          "element": { "-name": "text" }
+        }
+      },
+      {
+        "-name": "def_cdstub",
+        "element": {
+          "-name": "cdstub",
+          "attribute": {
+            "-name": "id",
+            "data": {
+              "-type": "string",
+              "param": {
+                "-name": "pattern",
+                "#text": "[a-zA-Z0-9._]{27}-"
+              }
+            }
+          },
+          "ref": [
+            { "-name": "def_cdstub-attribute_extension" },
+            { "-name": "def_nonmb-track-list" },
+            { "-name": "def_cdstub-element_extension" }
+          ],
+          "element": { "-name": "title" },
+          "optional": [
+            {
+              "element": { "-name": "artist" }
+            },
+            {
+              "element": { "-name": "barcode" }
+            },
+            {
+              "element": { "-name": "comment" }
+            }
+          ]
+        }
+      },
+      {
+        "-name": "def_freedb-disc",
+        "element": {
+          "-name": "freedb-disc",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": {
+                  "-type": "string",
+                  "param": {
+                    "-name": "pattern",
+                    "#text": "[a-zA-Z0-9]{8}"
+                  }
+                }
+              }
+            },
+            {
+              "element": { "-name": "artist" }
+            },
+            {
+              "element": { "-name": "category" }
+            },
+            {
+              "element": {
+                "-name": "year",
+                "data": {
+                  "-type": "string",
+                  "param": {
+                    "-name": "pattern",
+                    "#text": "[0-9]{4}"
+                  }
+                }
+              }
+            }
+          ],
+          "ref": [
+            { "-name": "def_freedb-disc-attribute_extension" },
+            { "-name": "def_nonmb-track-list" },
+            { "-name": "def_freedb-disc-element_extension" }
+          ],
+          "element": { "-name": "title" }
+        }
+      },
+      {
+        "-name": "def_nonmb-track",
+        "element": {
+          "-name": "track",
+          "element": [
+            { "-name": "title" },
+            {
+              "-name": "length",
+              "data": { "-type": "nonNegativeInteger" }
+            }
+          ],
+          "optional": {
+            "element": { "-name": "artist" }
+          }
+        }
+      },
+      {
+        "-name": "def_collection",
+        "element": {
+          "-name": "collection",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "attribute": {
+                "-name": "entity-type",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "editor" }
+            },
+            {
+              "ref": { "-name": "def_release-list" }
+            },
+            {
+              "ref": { "-name": "def_event-list" }
+            }
+          ],
+          "element": { "-name": "name" }
+        }
+      },
+      {
+        "-name": "def_editor-element",
+        "element": {
+          "-name": "editor",
+          "optional": [
+            {
+              "attribute": {
+                "-name": "id",
+                "data": { "-type": "nonNegativeInteger" }
+              }
+            },
+            {
+              "element": {
+                "-name": "member-since",
+                "ref": { "-name": "def_incomplete-date" }
+              }
+            },
+            {
+              "element": {
+                "-name": "privs",
+                "data": { "-type": "nonNegativeInteger" }
+              }
+            },
+            {
+              "element": { "-name": "gender" }
+            },
+            {
+              "element": { "-name": "age" }
+            },
+            {
+              "element": {
+                "-name": "homepage",
+                "data": { "-type": "anyURI" }
+              }
+            },
+            {
+              "element": { "-name": "bio" }
+            },
+            {
+              "ref": { "-name": "def_area-element" }
+            },
+            {
+              "ref": { "-name": "def_language-list" }
+            },
+            {
+              "element": {
+                "-name": "edit-information",
+                "element": [
+                  {
+                    "-name": "edits-accepted",
+                    "data": { "-type": "nonNegativeInteger" }
+                  },
+                  {
+                    "-name": "edits-rejected",
+                    "data": { "-type": "nonNegativeInteger" }
+                  },
+                  {
+                    "-name": "auto-edits-accepted",
+                    "data": { "-type": "nonNegativeInteger" }
+                  },
+                  {
+                    "-name": "edits-failed",
+                    "data": { "-type": "nonNegativeInteger" }
+                  }
+                ]
+              }
+            }
+          ],
+          "ref": { "-name": "def_editor-attribute_extension" },
+          "element": { "-name": "name" }
+        }
+      },
+      {
+        "-name": "def_language-list",
+        "element": {
+          "-name": "language-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "element": {
+              "-name": "language",
+              "optional": {
+                "attribute": {
+                  "-name": "fluency",
+                  "choice": {
+                    "value": [
+                      "basic",
+                      "intermediate",
+                      "advanced",
+                      "native"
+                    ]
+                  }
+                }
+              },
+              "ref": { "-name": "def_iso-639" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_release-event-element",
+        "element": {
+          "-name": "release-event",
+          "optional": [
+            {
+              "element": {
+                "-name": "date",
+                "ref": { "-name": "def_incomplete-date" }
+              }
+            },
+            {
+              "ref": { "-name": "def_area-element" }
+            }
+          ]
+        }
+      },
+      {
+        "-name": "def_metadata-element_extension",
+        "optional": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_artist-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_release-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_release-group-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_recording-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_series-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_label-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_work-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_area-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_place-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_instrument-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_event-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_puid-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_isrc-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_relation-element_extension",
+        "ref": { "-name": "def_extension_element" }
+      },
+      {
+        "-name": "def_annotation-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_disc-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_cdstub-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_freedb-disc-element_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_element" }
+        }
+      },
+      {
+        "-name": "def_artist-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_area-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_place-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_instrument-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_series-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_event-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_editor-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_url-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_release-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_release-group-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_recording-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_label-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_work-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_puid-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_isrc-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_annotation-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_disc-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_cdstub-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_freedb-disc-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_tag-attribute_extension",
+        "zeroOrMore": {
+          "ref": { "-name": "def_extension_attribute" }
+        }
+      },
+      {
+        "-name": "def_extension_element",
+        "element": {
+          "anyName": {
+            "except": {
+              "nsName": [
+                { "-ns": "http://musicbrainz.org/ns/mmd-2.0#" },
+                {
+                  
+                }
+              ]
+            }
+          },
+          "zeroOrMore": {
+            "choice": {
+              "attribute": {
+                
+              },
+              "ref": { "-name": "def_anything" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_extension_attribute",
+        "attribute": {
+          "anyName": {
+            "except": {
+              "nsName": [
+                { "-ns": "http://musicbrainz.org/ns/mmd-2.0#" },
+                {
+                  
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_anything",
+        "element": {
+          "anyName": {
+            "except": {
+              "nsName": {
+                
+              }
+            }
+          },
+          "zeroOrMore": {
+            "choice": {
+              "attribute": {
+                
+              },
+              "ref": { "-name": "def_anything" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_artist-list",
+        "element": {
+          "-name": "artist-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_artist-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_medium-list",
+        "element": {
+          "-name": "medium-list",
+          "ref": { "-name": "def_list-attributes" },
+          "optional": {
+            "element": {
+              "-name": "track-count",
+              "data": { "-type": "nonNegativeInteger" }
+            }
+          },
+          "zeroOrMore": {
+            "ref": { "-name": "def_medium" }
+          }
+        }
+      },
+      {
+        "-name": "def_release-list",
+        "element": {
+          "-name": "release-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_release-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_release-group-list",
+        "element": {
+          "-name": "release-group-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_release-group-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_alias-list",
+        "element": {
+          "-name": "alias-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_alias" }
+          }
+        }
+      },
+      {
+        "-name": "def_recording-list",
+        "element": {
+          "-name": "recording-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_recording-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_track-list",
+        "element": {
+          "-name": "track-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_track" }
+          }
+        }
+      },
+      {
+        "-name": "def_data-track-list",
+        "element": {
+          "-name": "data-track-list",
+          "ref": { "-name": "def_list-attributes" },
+          "oneOrMore": {
+            "ref": { "-name": "def_track" }
+          }
+        }
+      },
+      {
+        "-name": "def_offset-list",
+        "element": {
+          "-name": "offset-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "element": {
+              "-name": "offset",
+              "attribute": {
+                "-name": "position",
+                "data": { "-type": "nonNegativeInteger" }
+              },
+              "data": { "-type": "nonNegativeInteger" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_label-list",
+        "element": {
+          "-name": "label-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_label-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_label-info-list",
+        "element": {
+          "-name": "label-info-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_label-info" }
+          }
+        }
+      },
+      {
+        "-name": "def_work-list",
+        "element": {
+          "-name": "work-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_work-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_area-list",
+        "element": {
+          "-name": "area-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_area-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_place-list",
+        "element": {
+          "-name": "place-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_place-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_instrument-list",
+        "element": {
+          "-name": "instrument-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_instrument-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_series-list",
+        "element": {
+          "-name": "series-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_series-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_event-list",
+        "element": {
+          "-name": "event-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_event-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_url-list",
+        "element": {
+          "-name": "url-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_url-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_release-event-list",
+        "element": {
+          "-name": "release-event-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_release-event-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_annotation-list",
+        "element": {
+          "-name": "annotation-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_annotation" }
+          }
+        }
+      },
+      {
+        "-name": "def_cdstub-list",
+        "element": {
+          "-name": "cdstub-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_cdstub" }
+          }
+        }
+      },
+      {
+        "-name": "def_nonmb-track-list",
+        "element": {
+          "-name": "track-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_nonmb-track" }
+          }
+        }
+      },
+      {
+        "-name": "def_freedb-disc-list",
+        "element": {
+          "-name": "freedb-disc-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_freedb-disc" }
+          }
+        }
+      },
+      {
+        "-name": "def_disc-list",
+        "element": {
+          "-name": "disc-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_disc-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_puid-list",
+        "element": {
+          "-name": "puid-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_puid-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_isrc-list",
+        "element": {
+          "-name": "isrc-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_isrc-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_relation-list",
+        "element": {
+          "-name": "relation-list",
+          "attribute": {
+            "-name": "target-type",
+            "data": { "-type": "anyURI" }
+          },
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_relation-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_tag-list",
+        "element": {
+          "-name": "tag-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_tag" }
+          }
+        }
+      },
+      {
+        "-name": "def_iswc-list",
+        "element": {
+          "-name": "iswc-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_iswc-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_user-tag-list",
+        "element": {
+          "-name": "user-tag-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_user-tag" }
+          }
+        }
+      },
+      {
+        "-name": "def_collection-list",
+        "element": {
+          "-name": "collection-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_collection" }
+          }
+        }
+      },
+      {
+        "-name": "def_editor-list",
+        "element": {
+          "-name": "editor-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": { "-name": "def_editor-element" }
+          }
+        }
+      },
+      {
+        "-name": "def_entity-list",
+        "element": {
+          "-name": "entity-list",
+          "ref": { "-name": "def_list-attributes" },
+          "zeroOrMore": {
+            "ref": [
+              { "-name": "def_artist-element" },
+              { "-name": "def_release-element" },
+              { "-name": "def_release-group-element" },
+              { "-name": "def_recording-element" },
+              { "-name": "def_label-element" },
+              { "-name": "def_work-element" },
+              { "-name": "def_area-element" },
+              { "-name": "def_place-element" },
+              { "-name": "def_instrument-element" },
+              { "-name": "def_series-element" },
+              { "-name": "def_event-element" }
+            ]
+          }
+        }
+      },
+      {
+        "-name": "def_attribute-list",
+        "element": {
+          "-name": "attribute-list",
+          "oneOrMore": {
+            "element": {
+              "-name": "attribute",
+              "optional": [
+                {
+                  "attribute": {
+                    "-name": "value",
+                    "data": { "-type": "string" }
+                  }
+                },
+                {
+                  "attribute": {
+                    "-name": "credited-as",
+                    "data": { "-type": "string" }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_list-attributes",
+        "optional": [
+          {
+            "attribute": {
+              "-name": "count",
+              "data": { "-type": "nonNegativeInteger" }
+            }
+          },
+          {
+            "attribute": {
+              "-name": "offset",
+              "data": { "-type": "nonNegativeInteger" }
+            }
+          }
+        ]
+      },
+      {
+        "-name": "def_cover-art-archive",
+        "element": {
+          "-name": "cover-art-archive",
+          "element": [
+            {
+              "-name": "artwork",
+              "choice": {
+                "value": [
+                  "true",
+                  "false"
+                ]
+              }
+            },
+            {
+              "-name": "count",
+              "data": { "-type": "nonNegativeInteger" }
+            },
+            {
+              "-name": "front",
+              "choice": {
+                "value": [
+                  "true",
+                  "false"
+                ]
+              }
+            },
+            {
+              "-name": "back",
+              "choice": {
+                "value": [
+                  "true",
+                  "false"
+                ]
+              }
+            }
+          ],
+          "optional": {
+            "element": {
+              "-name": "darkened",
+              "choice": { "value": "true" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_incomplete-date",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[0-9]{4}(-[0-9]{2})?(-[0-9]{2})?"
+          }
+        }
+      },
+      {
+        "-name": "def_ipi",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[0-9]{11}"
+          }
+        }
+      },
+      {
+        "-name": "def_ipi-list",
+        "element": {
+          "-name": "ipi-list",
+          "zeroOrMore": {
+            "element": {
+              "-name": "ipi",
+              "ref": { "-name": "def_ipi" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_ended",
+        "element": {
+          "-name": "ended",
+          "choice": { "value": "true" }
+        }
+      },
+      {
+        "-name": "def_cancelled",
+        "element": {
+          "-name": "cancelled",
+          "choice": { "value": "true" }
+        }
+      },
+      {
+        "-name": "def_video",
+        "element": {
+          "-name": "video",
+          "choice": { "value": "true" }
+        }
+      },
+      {
+        "-name": "def_locale",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[a-z]{2}(_[A-Za-z]+)?"
+          }
+        }
+      },
+      {
+        "-name": "def_time",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "([01][0-9]|2[0-3]):[0-5][0-9]"
+          }
+        }
+      },
+      {
+        "-name": "def_iso-3166-1-code",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[A-Z]{2}"
+          }
+        }
+      },
+      {
+        "-name": "def_iso-3166-1-code-list",
+        "element": {
+          "-name": "iso-3166-1-code-list",
+          "zeroOrMore": {
+            "element": {
+              "-name": "iso-3166-1-code",
+              "ref": { "-name": "def_iso-3166-1-code" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_iso-3166-2-code",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[A-Z]{2}\\-[A-Z0-9]+"
+          }
+        }
+      },
+      {
+        "-name": "def_iso-3166-2-code-list",
+        "element": {
+          "-name": "iso-3166-2-code-list",
+          "zeroOrMore": {
+            "element": {
+              "-name": "iso-3166-2-code",
+              "ref": { "-name": "def_iso-3166-2-code" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_iso-3166-3-code",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[A-Z]{4}"
+          }
+        }
+      },
+      {
+        "-name": "def_iso-3166-3-code-list",
+        "element": {
+          "-name": "iso-3166-3-code-list",
+          "zeroOrMore": {
+            "element": {
+              "-name": "iso-3166-3-code",
+              "ref": { "-name": "def_iso-3166-3-code" }
+            }
+          }
+        }
+      },
+      {
+        "-name": "def_iso-639",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[a-z]{3}"
+          }
+        }
+      },
+      {
+        "-name": "def_iso-15924",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[A-Z][a-z]{3}"
+          }
+        }
+      },
+      {
+        "-name": "def_isrc",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[A-Z]{2}[A-Z0-9]{3}[0-9]{2}[0-9]{5}"
+          }
+        }
+      },
+      {
+        "-name": "def_iswc",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[A-Z]-[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}-[0-9]"
+          }
+        }
+      },
+      {
+        "-name": "def_uuid",
+        "data": {
+          "-type": "string",
+          "param": {
+            "-name": "pattern",
+            "#text": "[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}"
+          }
+        }
+      },
+      {
+        "-name": "def_direction",
+        "choice": {
+          "value": [
+            "both",
+            "forward",
+            "backward"
+          ]
+        }
+      },
+      {
+        "-name": "def_quality",
+        "choice": {
+          "value": [
+            "low",
+            "normal",
+            "high"
+          ]
+        }
+      },
+      {
+        "-name": "def_work-attribute-list",
+        "element": {
+          "-name": "attribute-list",
+          "oneOrMore": {
+            "element": {
+              "-name": "attribute",
+              "attribute": {
+                "-name": "type",
+                "data": { "-type": "string" }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
